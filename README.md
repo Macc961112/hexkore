@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Prueba-14%20días-070a0f?style=for-the-badge&labelColor=0f161f" alt="Prueba gratuita de 14 días">
 </p>
 
-<p align="center"><b>Datos reales de tu PC, el clima, las criptomonedas y las noticias, vivos en el fondo de pantalla.<br>En uno o varios monitores.</b></p>
+<p align="center"><b>Datos reales de tu PC, tus juegos, el clima, las criptomonedas y las noticias, vivos en el fondo de pantalla.<br>En uno o varios monitores.</b></p>
 
 ---
 
