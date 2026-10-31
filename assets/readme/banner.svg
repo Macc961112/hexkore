@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="NEXUS Interactive Desktop: tu escritorio, convertido en un centro de control">
+  <style>
+    .t { font-family: 'Bahnschrift', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .m { font-family: 'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace; }
+    .scan { animation: scan 4s cubic-bezier(.2,.8,.2,1) infinite; }
+    @keyframes scan { 0% { transform: translateY(-40px); opacity: 0 } 8% { opacity: 1 } 60% { opacity: .9 } 75%, 100% { transform: translateY(380px); opacity: 0 } }
+    .led { animation: led 4s steps(1) infinite; }
+    .l2 { animation-delay: .45s } .l3 { animation-delay: .9s }
+    @keyframes led { 0% { fill: #5a6e84 } 12%, 100% { fill: #3ef0a0 } }
+    .boot { animation: boot 4s ease-out infinite; opacity: 0 }
+    .b2 { animation-delay: .45s } .b3 { animation-delay: .9s }
+    @keyframes boot { 0% { opacity: 0 } 10% { opacity: 1 } 14% { opacity: .55 } 22%, 100% { opacity: 1 } }
+    .bar { animation: bar 2.4s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom }
+    .bar:nth-child(2n) { animation-duration: 1.7s } .bar:nth-child(3n) { animation-duration: 2.9s }
+    @keyframes bar { from { transform: scaleY(.25) } to { transform: scaleY(1) } }
+    .dash { stroke-dasharray: 6 10; animation: dash 6s linear infinite }
+    @keyframes dash { to { stroke-dashoffset: -160 } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important } }
+  </style>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#96c8ff" stroke-opacity=".08"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#3ee0ff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#3ee0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3ee0ff" stop-opacity="0"/>
+      <stop offset=".85" stop-color="#3ee0ff" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#3ee0ff" stop-opacity=".9"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1280" height="360" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="360" fill="#070a0f"/>
+    <rect width="1280" height="360" fill="url(#grid)"/>
+    <rect width="1280" height="360" fill="url(#glow)"/>
+
+    <!-- Marca -->
+    <g transform="translate(72 92)">
+      <polygon points="32,3 58,18 58,46 32,61 6,46 6,18" fill="none" stroke="#3ee0ff" stroke-width="3"/>
+      <polygon points="32,12 50,22 50,42 32,52 14,42 14,22" fill="#3ee0ff" fill-opacity=".12" stroke="#3ee0ff" stroke-opacity=".45" stroke-width="1.5"/>
+      <path d="M23 43V21L41 43V21" fill="none" stroke="#e6eef5" stroke-width="4" stroke-linecap="square"/>
+      <circle cx="32" cy="3" r="2.6" fill="#ffb547"/>
+    </g>
+    <text x="156" y="134" class="t" font-size="52" font-weight="600" letter-spacing="14" fill="#e6eef5">NEXUS</text>
+    <text x="158" y="166" class="m" font-size="15" letter-spacing="5" fill="#3ee0ff">INTERACTIVE DESKTOP</text>
+    <text x="72" y="226" class="t" font-size="30" font-weight="600" fill="#e6eef5">Tu escritorio, convertido en un centro de control.</text>
+    <text x="72" y="262" class="t" font-size="18" fill="#9aabbd">Datos reales de tu PC, clima, cripto y noticias en el fondo de pantalla · Windows 10 / 11</text>
+    <text x="72" y="306" class="m" font-size="14" letter-spacing="1.5" fill="#ffb547">0,19–0,44 % CPU  ·  ≈570 MB RAM  ·  EN PAUSA AL TAPARLO</text>
+
+    <!-- Tres monitores que se encienden -->
+    <g transform="translate(812 70)">
+      <g transform="translate(0 40) skewY(6)">
+        <rect width="120" height="76" rx="4" fill="#0f161f" stroke="#5a6e84"/>
+        <g class="boot">
+          <rect x="8" y="8" width="104" height="60" fill="#e8475f" fill-opacity=".08"/>
+          <g fill="#e8475f"><rect class="bar" x="14" y="40" width="8" height="22"/><rect class="bar" x="26" y="40" width="8" height="22"/><rect class="bar" x="38" y="40" width="8" height="22"/><rect class="bar" x="50" y="40" width="8" height="22"/></g>
+          <circle cx="90" cy="30" r="14" fill="none" stroke="#ffb547" stroke-width="3" stroke-dasharray="60 30"/>
+        </g>
+        <circle class="led" cx="60" cy="90" r="3" fill="#5a6e84"/>
+      </g>
+      <g transform="translate(132 18)">
+        <rect width="164" height="104" rx="5" fill="#0f161f" stroke="#3ee0ff" stroke-opacity=".6"/>
+        <g class="boot b2">
+          <rect x="8" y="8" width="148" height="88" fill="#3ee0ff" fill-opacity=".06"/>
+          <text x="16" y="36" class="m" font-size="20" fill="#e6eef5">09:20</text>
+          <path class="dash" d="M16 80 L40 66 L58 72 L80 52 L100 60 L120 44 L148 50" fill="none" stroke="#3ee0ff" stroke-width="2"/>
+          <circle cx="132" cy="28" r="12" fill="none" stroke="#3ee0ff" stroke-width="3" stroke-dasharray="50 26"/>
+        </g>
+        <circle class="led l2" cx="82" cy="118" r="3" fill="#5a6e84"/>
+      </g>
+      <g transform="translate(308 40) skewY(-6)">
+        <rect width="120" height="76" rx="4" fill="#0f161f" stroke="#5a6e84"/>
+        <g class="boot b3">
+          <rect x="8" y="8" width="104" height="60" fill="#3ef0a0" fill-opacity=".07"/>
+          <g fill="#3ef0a0"><rect class="bar" x="14" y="40" width="8" height="22"/><rect class="bar" x="26" y="40" width="8" height="22"/><rect class="bar" x="38" y="40" width="8" height="22"/></g>
+          <path d="M60 58 L72 46 L84 52 L104 30" fill="none" stroke="#3ef0a0" stroke-width="2"/>
+        </g>
+        <circle class="led l3" cx="60" cy="90" r="3" fill="#5a6e84"/>
+      </g>
+    </g>
+
+    <rect class="scan" x="0" y="0" width="1280" height="40" fill="url(#scanline)"/>
+    <rect x=".5" y=".5" width="1279" height="359" rx="12" fill="none" stroke="#96c8ff" stroke-opacity=".18"/>
+  </g>
+</svg>
