@@ -29,6 +29,43 @@
 
 Cada pantalla lleva su propio perfil. Hay seis incluidos: Centro de control, Trabajo, Trading, Gaming, Minimalista y Monitorización.
 
+## Gaming: tus juegos a un clic y un botón Turbo
+
+<p align="center"><img src="assets/shots/gaming-turbo.jpg" alt="Perfil Gaming con Turbo activo y la biblioteca de juegos" width="100%"></p>
+
+<table>
+  <tr>
+    <td width="55%"><img src="assets/shots/turbo.jpg" alt="Botón Turbo activo"></td>
+    <td>
+      <b>Turbo</b>: pulsa el cohete y NEXUS cierra lo que no hace falta para jugar online (navegadores, nube, mensajería, actualizadores) y pausa servicios como la búsqueda, la telemetría o Windows Update. Otro clic lo vuelve a abrir todo.<br><br>
+      <b>Nunca toca</b> la red, el audio, los drivers, el antivirus, tu VPN, Discord, los lanzadores de juegos ni los antitrampas.
+    </td>
+  </tr>
+</table>
+
+**Mis juegos** detecta solo lo que tienes instalado en Steam, Epic Games, GOG y Ubisoft Connect, con su portada. Lee los archivos de cada tienda en tu PC: sin cuentas y sin Internet.
+
+## Tareas: un clic en el escritorio y funciona
+
+<p align="center"><img src="assets/shots/trabajo-tareas.jpg" alt="Perfil Trabajo con cuenta atrás, notas y accesos rápidos" width="100%"></p>
+
+<table>
+  <tr>
+    <td width="45%"><img src="assets/shots/cuenta-atras.jpg" alt="Cuenta atrás de una tarea"></td>
+    <td><img src="assets/shots/nota.jpg" alt="Ventana para escribir una nota"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>CUENTA ATRÁS · SUENA Y AVISA AL TERMINAR</sub></td>
+    <td align="center"><sub>NOTAS · UN CLIC Y ESCRIBES</sub></td>
+  </tr>
+</table>
+
+Los widgets responden a un clic directamente sobre el escritorio, sin cambiar de modo:
+
+- **Cuenta atrás**: de 5 a 60 minutos con un clic y el nombre de la tarea. Al terminar suena y avisa, aunque estés jugando a pantalla completa.
+- **Notas**: un clic abre una ventanita encima del widget; se guarda sola.
+- **Accesos rápidos**: con el icono real del programa o uno a elegir, y distintos en cada perfil.
+
 ## Lo que consume, medido
 
 | Procesador | Memoria | Si un juego o una ventana lo tapa | Cuentas y telemetría |
@@ -63,7 +100,8 @@ Cada pantalla lleva su propio perfil. Hay seis incluidos: Centro de control, Tra
 | **Clima** | MET Norway, con pronóstico de 5 días |
 | **Cripto** | CoinGecko, con gráfico de 24 h |
 | **Noticias** | Las fuentes RSS que tú elijas |
-| **Tuyo** | Notas, temporizador, calendario y accesos rápidos |
+| **Juegos** | Tu biblioteca de Steam, Epic Games, GOG y Ubisoft Connect |
+| **Tuyo** | Notas, cuenta atrás, calendario y accesos rápidos |
 
 Si un dato no llega, el widget lo dice. Nunca muestra datos inventados.
 
@@ -71,7 +109,8 @@ Si un dato no llega, el widget lo dice. Nunca muestra datos inventados.
 
 | Atajo | Qué hace |
 |---|---|
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Usar notas, temporizador y enlaces |
+| Clic en un widget | Usarlo directamente, sin cambiar de modo |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | Modo interactivo: usar el wallpaper con teclado |
 | <kbd>Esc</kbd> | Volver al escritorio normal |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Mayús</kbd> + <kbd>N</kbd> | Recuperar el escritorio original si algo falla |
 
