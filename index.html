@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXUS Interactive Desktop</title>
+  <meta name="description" content="Wallpaper interactivo para Windows: datos reales de tu PC, clima, cripto y noticias en el fondo de pantalla, en uno o varios monitores. Prueba gratuita de 14 días.">
+  <meta name="theme-color" content="#070a0f">
+  <meta property="og:title" content="NEXUS Interactive Desktop">
+  <meta property="og:description" content="Tu escritorio, convertido en un centro de control. Prueba gratuita de 14 días.">
+  <meta property="og:image" content="assets/shots/centro-epic.jpg">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="preload" href="assets/fonts/barlow-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-row">
+      <a class="brand" href="#inicio" aria-label="NEXUS, inicio">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+          <polygon points="16,1.5 29,9 29,23 16,30.5 3,23 3,9" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+          <polygon points="16,6 25,11 25,21 16,26 7,21 7,11" fill="var(--accent)" fill-opacity=".12" stroke="var(--accent)" stroke-opacity=".45" stroke-width=".8"/>
+          <path d="M11.5 21.5V10.5L20.5 21.5V10.5" fill="none" stroke="var(--text)" stroke-width="2" stroke-linecap="square"/>
+          <circle cx="16" cy="1.5" r="1.2" fill="var(--amber)"/>
+        </svg>
+        <span>NEXUS</span>
+      </a>
+      <nav aria-label="Secciones">
+        <ul class="nav-links">
+          <li><a href="#datos">Datos reales</a></li>
+          <li><a href="#efectos">Efectos</a></li>
+          <li><a href="#monitores">Multimonitor</a></li>
+          <li><a href="#precio">Precio</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-sm" data-download href="#precio">Descargar prueba</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- 1 · Portada: el setup se enciende (momento firma) -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-copy">
+        <p class="kicker">Para Windows 10 y 11</p>
+        <h1>Tu escritorio, convertido en un centro&nbsp;de&nbsp;control.</h1>
+        <p class="lead">Datos reales de tu PC, el clima, las criptomonedas y las noticias, vivos en el fondo de pantalla. En uno o varios monitores.</p>
+        <div class="cta-row">
+          <a class="btn" data-download href="#precio">Descargar prueba de 14 días</a>
+          <a class="link-arrow" href="#efectos">Ver los 4 niveles de efectos</a>
+        </div>
+        <p class="fine" id="note-hero" data-download-note>Sin tarjeta y sin cuenta · Windows 10/11 de 64 bits</p>
+        <noscript><p class="fine">La descarga aún no está disponible.</p></noscript>
+        <p class="perf-line"><span>0,19–0,44 % de CPU</span><span>≈570 MB de RAM</span><span>En pausa al taparlo</span></p>
+      </div>
+
+      <div class="stage" aria-label="Tres monitores con NEXUS: perfil Gaming, Centro de control y Monitorización del sistema">
+        <figure class="monitor m-left">
+          <div class="screen"><img src="assets/shots/gaming.jpg" alt="Perfil Gaming: CPU, GPU, RAM y gráfico de uso en tonos rojos" width="1600" height="964" decoding="async"></div>
+          <figcaption><span class="led"></span>Gaming</figcaption>
+        </figure>
+        <figure class="monitor m-center">
+          <div class="screen"><img src="assets/shots/centro-epic.jpg" alt="Perfil Centro de control: reloj, clima de Madrid, cripto, noticias y métricas del sistema" width="1600" height="964" fetchpriority="high"></div>
+          <figcaption><span class="led"></span>Centro de control</figcaption>
+        </figure>
+        <figure class="monitor m-right">
+          <div class="screen"><img src="assets/shots/monitorizacion.jpg" alt="Perfil Monitorización del sistema en verde: indicadores, gráfico y batería" width="1600" height="964" decoding="async"></div>
+          <figcaption><span class="led"></span>Monitorización</figcaption>
+        </figure>
+        <div class="desk" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 2 · Lo que preocupa antes de instalar: el rendimiento, con cifras medidas -->
+    <section class="proof" aria-labelledby="proof-title">
+      <div class="wrap">
+        <h2 class="sr-only" id="proof-title">Rendimiento y privacidad, en cifras</h2>
+        <dl class="proof-grid">
+          <div class="proof-item reveal">
+            <dt>Procesador con efectos al máximo</dt>
+            <dd><span class="num" data-count="0.44" data-decimals="2">0,44</span><span class="unit">%</span></dd>
+            <p>Medido en un Intel i9-9880H con todos los procesos de NEXUS.</p>
+          </div>
+          <div class="proof-item reveal">
+            <dt>Memoria</dt>
+            <dd><span class="num" data-count="570">570</span><span class="unit">MB</span></dd>
+            <p>Todos los procesos de NEXUS, en el mismo equipo.</p>
+          </div>
+          <div class="proof-item reveal">
+            <dt>Al taparlo un juego o una ventana</dt>
+            <dd><span class="num">Pausa</span></dd>
+            <p>Deja de dibujar hasta que vuelves al escritorio.</p>
+          </div>
+          <div class="proof-item reveal">
+            <dt>Widgets con datos reales</dt>
+            <dd><span class="num" data-count="18">18</span></dd>
+            <p>Si un dato no llega, lo dice. Nunca se lo inventa.</p>
+          </div>
+          <div class="proof-item reveal">
+            <dt>Cuentas y telemetría</dt>
+            <dd><span class="num" data-count="0">0</span></dd>
+            <p>Sin registro. La licencia se comprueba sin conexión.</p>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3 · Qué hay en pantalla y de dónde sale -->
+    <section class="section" id="datos" aria-labelledby="datos-title">
+      <div class="wrap split">
+        <div class="split-copy reveal">
+          <p class="kicker">Datos reales</p>
+          <h2 id="datos-title">Cada número viene de algún sitio. Y te dice de dónde.</h2>
+          <p>Los sensores de tu PC se leen cada 2 segundos. El clima, las criptomonedas y las noticias se descargan de fuentes públicas y muestran cuándo se actualizaron por última vez.</p>
+          <ul class="sources">
+            <li><b>Tu PC</b><span>CPU, GPU, RAM, disco, red y batería</span></li>
+            <li><b>Clima</b><span>MET Norway, pronóstico de 5 días</span></li>
+            <li><b>Cripto</b><span>CoinGecko, con gráfico de 24 h</span></li>
+            <li><b>Noticias</b><span>Las fuentes de noticias (RSS) que tú elijas</span></li>
+            <li><b>Tuyo</b><span>Notas, temporizador, calendario y accesos</span></li>
+          </ul>
+        </div>
+        <figure class="shot pins reveal">
+          <img src="assets/shots/centro-normal.jpg" alt="Centro de control con nivel Futurista" width="1600" height="964" loading="lazy" decoding="async">
+          <span class="pin" style="--x:4%;--y:21%"><i></i><b>Sensores · cada 2 s</b></span>
+          <span class="pin pin-l" style="--x:76%;--y:3%"><i></i><b>MET Norway · cada 30 min</b></span>
+          <span class="pin pin-l" style="--x:76%;--y:27%"><i></i><b>CoinGecko · 24 h</b></span>
+          <span class="pin pin-l" style="--x:76%;--y:64%"><i></i><b>Tus fuentes RSS</b></span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4 · Efectos: elegir el nivel y ver su coste -->
+    <section class="section" id="efectos" aria-labelledby="efectos-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Efectos</p>
+          <h2 id="efectos-title">Tú decides cuánto se mueve. Y cuánto cuesta.</h2>
+          <p>Cuatro niveles por perfil. Debajo de cada uno, lo que consume medido en el mismo equipo.</p>
+        </div>
+        <div class="fx reveal">
+          <div class="fx-tabs" role="tablist" aria-label="Nivel de efectos">
+            <button role="tab" id="fx-off" aria-controls="fx-panel" aria-selected="false" data-fx="off" data-cpu="0,19" data-desc="Paneles fijos, sin animaciones.">Sin efectos</button>
+            <button role="tab" id="fx-subtle" aria-controls="fx-panel" aria-selected="false" data-fx="subtle" data-cpu="0,33" data-desc="Unas pocas partículas que flotan y brillo suave en los bordes.">Sutil</button>
+            <button role="tab" id="fx-normal" aria-controls="fx-panel" aria-selected="true" data-fx="normal" data-cpu="0,36" data-desc="Partículas unidas por líneas, pulsos de luz por la cuadrícula y un fondo que cambia de color despacio.">Futurista</button>
+            <button role="tab" id="fx-epic" aria-controls="fx-panel" aria-selected="false" data-fx="epic" data-cpu="0,44" data-desc="Todo lo anterior, más un barrido de radar y reflejos de luz sobre los paneles.">Espectacular</button>
+          </div>
+          <figure class="shot fx-view" id="fx-panel" role="tabpanel" aria-labelledby="fx-normal" tabindex="0">
+            <img data-fx-img src="assets/shots/centro-normal.jpg" alt="Centro de control con efectos Futurista" width="1600" height="964" loading="lazy" decoding="async">
+            <figcaption class="fx-meter" aria-live="polite">
+              <span class="fx-desc" data-fx-desc>Partículas unidas por líneas, pulsos de luz por la cuadrícula y un fondo que cambia de color despacio.</span>
+              <span class="fx-cpu"><b data-fx-cpu>0,36 %</b> del procesador</span>
+            </figcaption>
+          </figure>
+          <noscript><p class="fine fx-static">Procesador medido por nivel: Sin efectos 0,19 % · Sutil 0,33 % · Futurista 0,36 % · Espectacular 0,44 %.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Multimonitor -->
+    <section class="section" id="monitores" aria-labelledby="monitores-title">
+      <div class="wrap split split-rev">
+        <figure class="shot reveal">
+          <img src="assets/shots/editor-pantallas.jpg" alt="Editor de NEXUS, sección Escritorio: mapa de pantallas y perfil de cada una" width="1400" height="896" loading="lazy" decoding="async">
+        </figure>
+        <div class="split-copy reveal">
+          <p class="kicker">Multimonitor</p>
+          <h2 id="monitores-title">Un perfil distinto en cada pantalla.</h2>
+          <p>NEXUS detecta tus monitores y los dibuja como los tienes colocados. Elige qué ve cada uno y edita su diseño por separado: sistema a la izquierda, centro de control en el principal, noticias a la derecha.</p>
+          <p class="chips-label">Perfiles incluidos</p>
+          <ul class="chips">
+            <li>Centro de control</li><li>Trabajo</li><li>Trading</li><li>Gaming</li><li>Minimalista</li><li>Monitorización</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · El escritorio sigue siendo tuyo -->
+    <section class="section" aria-labelledby="control-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Siempre bajo tu control</p>
+          <h2 id="control-title">Tu escritorio sigue funcionando como siempre.</h2>
+          <p>Los iconos y accesos directos responden igual. Cuando quieras usar las notas o el temporizador, entra en modo interactivo.</p>
+        </div>
+        <ol class="keys">
+          <li class="reveal"><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>N</kbd><span>Usar notas, temporizador y enlaces</span></li>
+          <li class="reveal"><kbd>Esc</kbd><span>Volver al escritorio normal</span></li>
+          <li class="reveal"><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>Mayús</kbd><kbd>N</kbd><span>Recuperar el escritorio original si algo falla</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 7 · Precio -->
+    <section class="section" id="precio" aria-labelledby="precio-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Precio</p>
+          <h2 id="precio-title">Pruébalo entero. Paga una vez si te quedas.</h2>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Prueba gratuita</h3>
+            <p class="plan-price">14 días</p>
+            <ul class="ticks">
+              <li>Todos los widgets, efectos y perfiles</li>
+              <li>Todas tus pantallas</li>
+              <li>Sin tarjeta ni registro</li>
+              <li>Al terminar, sigue en tu pantalla principal con un aviso discreto</li>
+            </ul>
+            <a class="btn" data-download href="#precio">Descargar prueba</a>
+            <p class="fine" id="note-trial" data-download-note data-signed-note>El instalador aún no lleva firma: Windows puede mostrar un aviso de seguridad (SmartScreen).</p>
+            <noscript><p class="fine">La descarga aún no está disponible.</p></noscript>
+          </article>
+          <article class="plan reveal">
+            <h3>Licencia Pro</h3>
+            <p class="plan-price" data-price>Pago único</p>
+            <ul class="ticks">
+              <li>Todas las pantallas, sin avisos</li>
+              <li>Actualizaciones de la versión 1.x incluidas</li>
+              <li>Uso personal en hasta 2 equipos</li>
+              <li>Se activa sin conexión, con tu clave</li>
+            </ul>
+            <a class="btn btn-ghost" data-purchase href="#precio">Comprar licencia</a>
+            <p class="fine" id="note-buy" data-purchase-note>El precio se anunciará con la primera versión pública.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · Preguntas -->
+    <section class="section" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <div class="section-head reveal">
+          <p class="kicker">Preguntas</p>
+          <h2 id="faq-title">Antes de instalar</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>¿Windows me mostrará un aviso al instalarlo?</summary>
+            <p>Probablemente sí. El instalador todavía no lleva firma de código, así que SmartScreen puede mostrar «Windows protegió su PC». Pulsa «Más información» y después «Ejecutar de todos modos».</p>
+          </details>
+          <details>
+            <summary>¿Me quitará FPS en los juegos?</summary>
+            <p>Cuando un juego o una ventana tapa el escritorio, NEXUS deja de dibujar. Con el escritorio a la vista consume entre el 0,19 % y el 0,44 % del procesador según el nivel de efectos, y unos 570 MB de memoria, medido en un Intel i9-9880H. El uso de la tarjeta gráfica todavía no lo hemos medido.</p>
+          </details>
+          <details>
+            <summary>¿Qué pasa cuando terminan los 14 días?</summary>
+            <p>No se bloquea ni se borra nada. Sigue funcionando en tu pantalla principal y muestra un aviso pequeño para activar la licencia.</p>
+          </details>
+          <details>
+            <summary>¿Qué datos envía a internet?</summary>
+            <p>Solo pide los datos de los widgets que actives: envía las coordenadas de tu ciudad a MET Norway para el clima, el nombre que buscas a OpenStreetMap, la lista de monedas a CoinGecko y consulta las fuentes RSS que elijas. No hay cuentas ni telemetría, y tus claves de API se guardan cifradas en tu equipo.</p>
+          </details>
+          <details>
+            <summary>¿Cuántos monitores admite?</summary>
+            <p>Todos los que detecte Windows. En cada uno eliges si lleva wallpaper y con qué perfil.</p>
+          </details>
+          <details>
+            <summary>¿Cómo lo desinstalo?</summary>
+            <p>Desde Configuración → Aplicaciones, como cualquier programa. NEXUS nunca cambia tu fondo de pantalla de Windows: al cerrarlo o desinstalarlo vuelves a ver el tuyo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · Cierre -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="wrap final-inner reveal">
+        <h2 id="final-title">Enciende tu setup.</h2>
+        <a class="btn" data-download href="#precio">Descargar prueba de 14 días</a>
+        <p class="fine" id="note-final" data-download-note>Windows 10/11 de 64 bits · unos 120 MB</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot-row">
+      <p>© 2026 NEXUS Interactive Desktop</p>
+      <p class="credits">Clima: <a href="https://api.met.no" rel="noopener">MET Norway</a> (CC BY 4.0) · Ciudades: © <a href="https://www.openstreetmap.org/copyright" rel="noopener">colaboradores de OpenStreetMap</a> · Cripto: <a href="https://www.coingecko.com" rel="noopener">CoinGecko</a></p>
+      <p data-support>Soporte: próximamente</p>
+    </div>
+  </footer>
+</body>
+</html>
