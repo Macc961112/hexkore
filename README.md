@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://macc961112.github.io/nexus-desktop/"><img src="assets/readme/banner.svg" alt="NEXUS Interactive Desktop: tu escritorio, convertido en un centro de control" width="100%"></a>
+  <a href="https://macc961112.github.io/hexkore/"><img src="assets/readme/banner.svg" alt="HexKore: tu escritorio, convertido en un centro de control" width="100%"></a>
 </p>
 
 <p align="center">
-  <a href="https://macc961112.github.io/nexus-desktop/"><img src="https://img.shields.io/badge/Ver_la_web-3ee0ff?style=for-the-badge&logoColor=03141a&labelColor=070a0f&color=3ee0ff" alt="Ver la web"></a>
+  <a href="https://macc961112.github.io/hexkore/"><img src="https://img.shields.io/badge/Ver_la_web-3ee0ff?style=for-the-badge&logoColor=03141a&labelColor=070a0f&color=3ee0ff" alt="Ver la web"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%7C%2011%20·%2064%20bits-070a0f?style=for-the-badge&labelColor=0f161f" alt="Windows 10 y 11, 64 bits">
   <img src="https://img.shields.io/badge/Prueba-14%20días-070a0f?style=for-the-badge&labelColor=0f161f" alt="Prueba gratuita de 14 días">
 </p>
@@ -37,7 +37,7 @@ Cada pantalla lleva su propio perfil. Hay seis incluidos: Centro de control, Tra
   <tr>
     <td width="55%"><img src="assets/shots/turbo.jpg" alt="Botón Turbo activo"></td>
     <td>
-      <b>Turbo</b>: pulsa el cohete y NEXUS cierra lo que no hace falta para jugar online (navegadores, nube, mensajería, actualizadores) y pausa servicios como la búsqueda, la telemetría o Windows Update. Otro clic lo vuelve a abrir todo.<br><br>
+      <b>Turbo</b>: pulsa el cohete y HexKore cierra lo que no hace falta para jugar online (navegadores, nube, mensajería, actualizadores) y pausa servicios como la búsqueda, la telemetría o Windows Update. Otro clic lo vuelve a abrir todo.<br><br>
       <b>Nunca toca</b> la red, el audio, los drivers, el antivirus, tu VPN, Discord, los lanzadores de juegos ni los antitrampas.
     </td>
   </tr>
@@ -73,7 +73,7 @@ Los widgets responden a un clic directamente sobre el escritorio, sin cambiar de
 | **0,19–0,44 %** | **≈570 MB** | **Pausa** | **0** |
 | según el nivel de efectos | todos los procesos | deja de dibujar | licencia sin conexión |
 
-<sub>Medido en un Intel i9-9880H con todos los procesos de NEXUS. El uso de la tarjeta gráfica todavía no se ha medido.</sub>
+<sub>Medido en un Intel i9-9880H con todos los procesos de HexKore. El uso de la tarjeta gráfica todavía no se ha medido.</sub>
 
 ## Cuatro niveles de efectos
 
@@ -115,8 +115,8 @@ Si un dato no llega, el widget lo dice. Nunca muestra datos inventados.
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Mayús</kbd> + <kbd>N</kbd> | Recuperar el escritorio original si algo falla |
 
 <p align="center">
-  <a href="https://macc961112.github.io/nexus-desktop/"><img src="assets/readme/sitio.jpg" alt="La web de NEXUS" width="100%"></a>
-  <br><sub>La página de presentación: <a href="https://macc961112.github.io/nexus-desktop/">macc961112.github.io/nexus-desktop</a></sub>
+  <a href="https://macc961112.github.io/hexkore/"><img src="assets/readme/sitio.jpg" alt="La web de HexKore" width="100%"></a>
+  <br><sub>La página de presentación: <a href="https://macc961112.github.io/hexkore/">macc961112.github.io/hexkore</a></sub>
 </p>
 
 ---
