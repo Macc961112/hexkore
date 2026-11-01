@@ -81,6 +81,39 @@
     setTimeout(boot, 2500);
   }
 
+  // Vídeo de presentación: en bucle y sin sonido en el monitor central;
+  // con sonido en grande al pulsar (versión vertical en móvil).
+  const loopVideo = stage.querySelector('.screen-video');
+  if (!reduce && !navigator.connection?.saveData) {
+    setTimeout(() => {
+      loopVideo.src = 'assets/video/hexkore-promo.mp4';
+      loopVideo.addEventListener('playing', () => loopVideo.classList.add('playing'), { once: true });
+      loopVideo.play().catch(() => undefined);
+    }, 1600);
+  }
+  const promo = document.getElementById('promo');
+  const promoVideo = promo.querySelector('video');
+  const openPromo = () => {
+    const vertical = matchMedia('(max-width: 719px) and (orientation: portrait)').matches;
+    promo.classList.toggle('vertical', vertical);
+    const src = `assets/video/hexkore-promo${vertical ? '-vertical' : ''}.mp4`;
+    if (!promoVideo.src.endsWith(src)) {
+      promoVideo.poster = `assets/video/poster${vertical ? '-vertical' : ''}.jpg`;
+      promoVideo.src = src;
+    }
+    loopVideo.pause();
+    promo.showModal();
+    promoVideo.currentTime = 0;
+    promoVideo.play().catch(() => undefined);
+  };
+  for (const b of document.querySelectorAll('[data-promo-open]')) b.addEventListener('click', openPromo);
+  promo.querySelector('[data-promo-close]').addEventListener('click', () => promo.close());
+  promo.addEventListener('click', (e) => { if (e.target === promo) promo.close(); });
+  promo.addEventListener('close', () => {
+    promoVideo.pause();
+    if (loopVideo.src) loopVideo.play().catch(() => undefined);
+  });
+
   // Ligero paralaje de los monitores con el ratón (solo con puntero fino).
   if (!reduce && matchMedia('(pointer: fine)').matches) {
     let raf = 0;

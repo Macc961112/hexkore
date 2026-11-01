@@ -226,6 +226,32 @@ p { margin: 0; }
   .m-left, .m-right { display: none; }
 }
 
+/* Vídeo de presentación dentro del monitor central y en grande. */
+.screen-video { position: absolute; inset: 0.5%; width: 99%; height: 99%; object-fit: cover; border-radius: var(--r-xs); opacity: 0; transition: opacity 700ms var(--ease-out); pointer-events: none; }
+.screen-video.playing { opacity: 1; }
+.play-btn {
+  position: absolute; left: 50%; bottom: 6%; z-index: 3; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: var(--s2); min-height: var(--tap-min); padding: 0 var(--s4); white-space: nowrap;
+  font: 500 var(--t-xs)/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text);
+  background: rgb(var(--rgb-bg) / 0.72); border: 1px solid rgb(var(--rgb-accent) / 0.55); border-radius: 999px;
+  backdrop-filter: blur(6px); cursor: pointer; opacity: 0; transition: opacity 400ms var(--ease-out), background-color 200ms, border-color 200ms;
+}
+.play-btn svg { color: var(--accent); }
+.monitor.done .play-btn, .stage:not(.booted) .play-btn { opacity: 1; }
+.js .stage:not(.booted) .play-btn { opacity: 0; }
+.play-btn:hover, .play-btn:focus-visible { background: rgb(var(--rgb-bg) / 0.9); border-color: var(--accent); }
+.link-play { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; }
+.promo { width: min(1280px, 94vw); max-width: none; max-height: 92vh; padding: 0; border: 1px solid var(--line-2); border-radius: var(--r-m); background: #000; overflow: visible; }
+.promo::backdrop { background: rgb(2 4 8 / 0.86); backdrop-filter: blur(4px); }
+.promo video { display: block; width: 100%; max-height: 92vh; border-radius: var(--r-m); background: #000; }
+.promo.vertical { width: fit-content; }
+.promo.vertical video { width: auto; height: min(88vh, 160vw); max-width: 92vw; }
+.promo-close {
+  position: absolute; top: -14px; right: -14px; z-index: 1; width: var(--tap-min); height: var(--tap-min);
+  border-radius: 50%; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text); font-size: 24px; line-height: 1; cursor: pointer;
+}
+@media (max-width: 719px) { .promo-close { top: 6px; right: 6px; } }
+
 /* Arranque: cada pantalla se enciende por turnos (solo con JS y sin «reducir movimiento»). */
 .js .stage:not(.booted) .screen img { opacity: 0; }
 .js .stage .screen img { transition: opacity 500ms var(--ease-out), filter 700ms var(--ease-out); }

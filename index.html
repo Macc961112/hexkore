@@ -54,7 +54,7 @@
         <p class="lead">Datos reales de tu PC, tus juegos, el clima, las criptomonedas y las noticias, vivos en el fondo de pantalla. En uno o varios monitores.</p>
         <div class="cta-row">
           <a class="btn" data-download href="#precio">Descargar prueba de 14 días</a>
-          <a class="link-arrow" href="#efectos">Ver los 4 niveles de efectos</a>
+          <button class="link-arrow link-play" type="button" data-promo-open>Ver el vídeo</button>
         </div>
         <p class="fine" id="note-hero" data-download-note>Sin tarjeta y sin cuenta · Windows 10/11 de 64 bits</p>
         <noscript><p class="fine">La descarga aún no está disponible.</p></noscript>
@@ -67,7 +67,10 @@
           <figcaption><span class="led"></span>Gaming</figcaption>
         </figure>
         <figure class="monitor m-center">
-          <div class="screen"><img src="assets/shots/centro-epic.jpg" alt="Perfil Centro de control: reloj, clima de Madrid, cripto, noticias y métricas del sistema" width="1600" height="964" fetchpriority="high"></div>
+          <div class="screen"><img src="assets/shots/centro-epic.jpg" alt="Perfil Centro de control: reloj, clima de Madrid, cripto, noticias y métricas del sistema" width="1600" height="964" fetchpriority="high">
+            <video class="screen-video" muted loop playsinline preload="none" poster="assets/video/poster.jpg" aria-hidden="true" tabindex="-1"></video>
+            <button class="play-btn" type="button" data-promo-open aria-label="Ver el vídeo de presentación con sonido"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg><span>Ver con sonido</span></button>
+          </div>
           <figcaption><span class="led"></span>Centro de control</figcaption>
         </figure>
         <figure class="monitor m-right">
@@ -77,6 +80,11 @@
         <div class="desk" aria-hidden="true"></div>
       </div>
     </section>
+
+    <dialog class="promo" id="promo" aria-label="Vídeo de presentación de HexKore">
+      <button class="promo-close" type="button" data-promo-close aria-label="Cerrar el vídeo">×</button>
+      <video controls playsinline preload="none"></video>
+    </dialog>
 
     <!-- 2 · Lo que preocupa antes de instalar: el rendimiento, con cifras medidas -->
     <section class="proof" aria-labelledby="proof-title">
